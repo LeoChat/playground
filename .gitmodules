@@ -1,0 +1,3 @@
+[submodule "git_modules/botframework-webchat-leo"]
+	path = git_modules/botframework-webchat-leo
+	url = git@github.com:LeoChat/BotFramework-WebChat-Leo.git
