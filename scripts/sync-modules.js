@@ -24,7 +24,12 @@ const main = async () => {
     const gm = gitModules[i];
     const name = gitModulesNames[i];
 
-    await execa('git', ['pull', 'origin', 'master'], {
+    await execa('git', ['fetch', 'origin', 'master'], {
+      cwd: gm,
+      stdio: 'inherit',
+    });
+
+    await execa('git', ['checkout', 'origin/master'], {
       cwd: gm,
       stdio: 'inherit',
     });

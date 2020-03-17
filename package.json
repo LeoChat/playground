@@ -11,7 +11,7 @@
   "dependencies": {
     "adaptivecards": "1.2.5",
     "botframework-directlinejs": "^0.11.6",
-    "botframework-webchat": "^4.7.1",
+    "botframework-webchat": "^4.8.0",
     "classnames": "^2.2.6",
     "glamor": "^2.20.40",
     "memoize-one": "^5.0.2",
