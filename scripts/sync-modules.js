@@ -32,7 +32,7 @@ const main = async () => {
     await execa('git', ['add', gm]);
 
     try {
-      await exec('git', ['diff', '--quiet', gm]);
+      await execa('git', ['diff', '--quiet', gm]);
 
       changedModules.push(gm);
       changedModulesNames.push(name);
