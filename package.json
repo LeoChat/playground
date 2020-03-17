@@ -24,9 +24,12 @@
     "build": "react-app-rewired build",
     "eject": "react-app-rewired eject",
     "start": "react-app-rewired start",
-    "test": "react-app-rewired test --env=jsdom"
+    "test": "react-app-rewired test --env=jsdom",
+    "sync-modules": "node scripts/sync-modules"
   },
   "devDependencies": {
+    "array-to-sentence": "^2.0.0",
+    "execa": "^4.0.0",
     "react-app-rewired": "^2.1.5",
     "react-scripts": "^3.4.0",
     "webpack-merge": "^4.2.2"
