@@ -26,7 +26,7 @@ const main = async () => {
 
     await execa('git', ['pull', 'origin', 'master'], {
       cwd: gm,
-      stdio: 'pipe',
+      stdio: 'inherit',
     });
 
     await execa('git', ['add', gm]);
@@ -45,7 +45,7 @@ const main = async () => {
   if (!changedModules.length) return;
 
   await execa('git', ['commit', ...changedModules, '-m', `Sync ${arrToSentence(changedModulesNames)} git-modules`], {
-    stdio: 'pipe',
+    stdio: 'inherit',
   });
 };
 
