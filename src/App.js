@@ -428,6 +428,7 @@ const App = ({ store }) => {
         headerLogo='https://static.wixstatic.com/media/9ab76d_a04a2bfeb8c1491c94cf25dbfa021c97~mv2.png/v1/crop/x_2,y_0,w_185,h_90/fill/w_105,h_51,al_c,q_85,usm_0.66_1.00_0.01/9ab76d_a04a2bfeb8c1491c94cf25dbfa021c97~mv2.webp'
         headerTitle='Playground'
         headerSubtitle='An easy testing solution for UI components'
+        exports={require('./module').exports}
       />
       <div className="button-bar">
         <button onClick={handleResetClick} type="button">
